@@ -14,10 +14,10 @@ type="type-1"
 theme="style-1"
 
 # Parse flags
-while getopts "t:T:" opt; do
+while getopts "t:s:" opt; do
   case $opt in
     t) type="$OPTARG" ;;
-    T) theme="$OPTARG" ;;
+    s) theme="$OPTARG" ;;
     \?) echo "Invalid option: -$OPTARG" >&2; exit 1 ;;
   esac
 done
