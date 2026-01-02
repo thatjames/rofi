@@ -16,8 +16,8 @@ theme="style-1"
 # Parse flags
 while getopts "t:s:" opt; do
   case $opt in
-    t) type="$OPTARG" ;;
-    s) theme="$OPTARG" ;;
+    t) type="type-$OPTARG" ;;
+    s) theme="style-$OPTARG" ;;
     \?) echo "Invalid option: -$OPTARG" >&2; exit 1 ;;
   esac
 done
